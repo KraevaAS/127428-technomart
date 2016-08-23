@@ -1,23 +1,165 @@
 body {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
+  color       : #000000;
+  font-family : "PT Sans",
+                "Arial",
+                sans-serif;
+  font-size   : 13px;
+  font-weight : normal;
+  line-height : 24px;
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 24px;
-  color: #ffffff;
-  font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
+  color       : #ffffff;
+  font-family : "Cuprum",
+                "Arial",
+                sans-serif;
+  font-size   : 24px;
+  font-weight : normal;
+  line-height : 24px;
 }
 
 h2 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
+  color       : #000000;
+  font-family : "Cuprum",
+                "Arial",
+                sans-serif;
+  font-size   : 30px;
+  font-weight : normal;
+  line-height : 30px;
+}
+
+header {
+  width            : auto;
+  min-height       : 320px;
+  background-color : #f1f5f7;
+}
+
+.header-top {
+  min-height       : 40px;
+  padding-top      : 10px;
+  background-color : #293449;
+}
+
+.header-top-container {
+  width  : 940px;
+  margin : 0 auto;
+}
+
+.header-top a {
+  color           : #ffffff;
+  text-decoration : none;
+}
+
+.header-top .logo {
+  width      : 220px;
+  height     : 40px;
+  float      : left;
+  margin     : 0px;
+  text-align : center;
+}
+
+.logo a {
+  text-transform : uppercase;
+  font-size      : 24px;
+}
+
+.header-top .search {
+  float : left;
+  color : #ffffff;
+}
+
+.header-top .checkout {
+  width : 150px;
+  float : right;
+}
+
+.header-top .bookmarks-basket {
+  float        : left;
+  padding-left : 20px;
+}
+
+.header-top .bookmarks {
+  display : inline-block;
+  width   : 150px;
+}
+
+.header-top .basket {
+  display : inline-block;
+  width   : 150px;
+}
+
+.header-center {
+  display       : table;
+  width         : 940px;
+  margin        : 0 auto;
+  margin-top    : 50px;
+  margin-bottom : 40px;
+}
+
+.header-center a {
+  text-decoration : none;
+}
+
+.header-center .description {
+  display      : table-cell;
+  width        : 250px;
+  padding-left : 40px;
+}
+
+.header-center .header-contacts {
+  padding-left : 80px;
+}
+
+.header-center .adress {
+  width : 260px;
+}
+
+.header-center .header-contacts {
+  display : table-cell;
+}
+
+.header-center .login-in {
+  display : table-cell;
+}
+
+.header-bottom {
+  width          : 940px;
+  height         : 60px;
+  margin         : 0 auto;
+  padding-bottom : 60px;
+}
+
+.header-bottom a {
+  color           : #ffffff;
+  text-decoration : none;
+  font-family     : "Cuprum",
+                    "Arial",
+                    sans-serif;
+  font-size       : 17px;
+}
+
+.header-bottom ul {
+  height           : 60px;
+  padding          : 0px;
+  padding-right    : 45px;
+  padding-left     : 45px;
+  background-color : #32425c;
+  vertical-align   : middle;
+}
+
+.header-bottom li {
+  display         : inline-block;
+  padding-right   : 30px;
+  padding-left    : 30px;
+  color           : #ffffff;
+  line-height     : 60px;
+  list-style-type : none;
+}
+
+.header-bottom li:first-child {
+  padding-left : 0px;
+}
+
+.header-bottom li:last-child {
+  padding-right : 0px;
 }
