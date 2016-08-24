@@ -435,3 +435,149 @@ header {
   line-height: 24px;
   margin: 0;
 }
+
+.footer-top-container {
+  background-color: #32425c;
+  min-height: 200px;
+}
+
+.footer-bottom-container {
+  background-color: #293449;
+}
+
+.footer-top {
+  min-height: 190px;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo-contacts-container {
+  float: left;
+  width: 360px;
+}
+
+.footer-top .logo {
+  width: 220px;
+  height: 40px;
+  margin: 5px 0 0;
+  text-align: center;
+}
+
+.logo span {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ffffff;
+  width: 220px;
+  height: 60px;
+}
+
+.footer-top-contacts {
+  width: 360px;
+}
+
+.footer-top-contacts p {
+  margin: 0;
+  color: #f1f5f7;
+  font-size: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.footer-top ul {
+  width: 570px;
+}
+
+.footer-top li {
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.footer-top a {
+  text-decoration: none;
+}
+
+.footer-navigation {
+  float: right;
+  width: 570px;
+}
+
+.navigation-top li {
+  padding-left: 40px;
+}
+
+.navigation-top li:first-child {
+  padding-left: 20px;
+}
+
+.navigation-top a {
+  color: #f1f5f7;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.navigation-bottom li {
+  padding-left: 40px;
+}
+
+.navigation-bottom li:first-child {
+  padding-left: 30px;
+}
+
+.navigation-bottom a {
+  color: #ffd180;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  height: 110px;
+  width: 940px;
+  margin: 0 auto;
+  display: table;
+  padding-top: 40px;
+}
+
+.footer-company-name {
+  display: table-cell;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-social {
+  display: table-cell;
+}
+
+.footer-company-name p {
+  margin: 0;
+}
+
+.footer-bottom-contacts {}
+
+.footer-mail {
+  display: table-cell;
+}
+
+.footer-website {
+  display: table-cell;
+  padding-left: 50px;
+}
+
+.footer-bottom-contacts p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.footer-bottom-contacts a {
+  text-decoration: none;
+  color: #ffd180;
+  font-size: 16px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
