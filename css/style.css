@@ -1094,15 +1094,11 @@ header {
   clear: both;
 }
 
-.slider,
-.slider .slider-page {
-  position: relative;
-}
-
 .slider {
   overflow-x: hidden;
   float: left;
   width: 620px;
+  position: relative;
 }
 
 .slider .slider-cta,
@@ -1121,6 +1117,7 @@ header {
   float: left;
   height: 266px;
   width: 620px;
+  position: relative;
 }
 
 .slider .slider-page-content {
