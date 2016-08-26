@@ -47,9 +47,9 @@ header {
 }
 
 .header-top .logo {
+  float: left;
   width: 220px;
   height: 40px;
-  float: left;
   margin: 5px 0 0;
   text-align: center;
 }
@@ -62,16 +62,18 @@ header {
 .header-top .search {
   float: left;
   color: #ffffff;
+  width: 270px;
 }
 
 .header-top .checkout {
-  width: 150px;
   float: right;
+  width: 150px;
 }
 
 .header-top .bookmarks-basket {
   float: left;
   padding-left: 20px;
+  width: 300px;
 }
 
 .header-top .bookmarks {
@@ -161,6 +163,7 @@ header {
 
 .cta-window {
   float: right;
+  width: 620px;
 }
 
 .catalog-breadcrumbs ul {
@@ -318,11 +321,11 @@ header {
 }
 
 .item {
+  float: left;
   width: 218px;
   height: 313px;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
-  float: left;
 }
 
 .items .item {
@@ -524,6 +527,7 @@ header {
 
 .option img {
   float: right;
+  width: 300px;
 }
 
 .materials img {
@@ -700,13 +704,13 @@ header {
 }
 
 .services-group {
-  width: 260px;
   float: left;
+  width: 260px;
 }
 
 .services-group ul {
-  width: 250px;
   float: left;
+  width: 250px;
   padding-top: 40px;
   margin: 0;
   padding-left: 0;
@@ -1168,12 +1172,9 @@ header {
   left: 300px;
 }
 
-.main-content,
 .main-content .option {
   float: left;
-}
-
-.main-content .option {
+  width: 300px;
   margin: 0 0 20px 20px;
   border: none;
 }
