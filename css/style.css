@@ -5,6 +5,31 @@
   font-style: normal;
 }
 
+body {
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+h2 {
+  color: #000000;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
 i {
   font-family: "symbols-technomart";
   padding: 15px;
@@ -53,31 +78,6 @@ i.icon-login-out::after {
   font-size: 22px;
   color: #c5c5c5;
   line-height: 18px;
-}
-
-body {
-  color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 24px;
-}
-
-h1 {
-  margin: 0;
-  color: #ffffff;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 24px;
-}
-
-h2 {
-  color: #000000;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 30px;
 }
 
 header {
@@ -292,13 +292,13 @@ header {
 .profile .icon-login-in {
   float: left;
   width: 20px;
-  padding: 0px 14px 0px 15px;
+  padding: 0 14px 0 15px;
 }
 
 .profile .icon-login-out {
   float: right;
   width: 30px;
-  padding: 0px;
+  padding: 0;
 }
 
 .profile .name {
@@ -624,11 +624,6 @@ header {
   padding-top: 40px;
 }
 
-.checkout-btn {
-  width: 220px;
-  height: 40px;
-}
-
 .continue-btn {
   width: 220px;
   height: 40px;
@@ -691,6 +686,63 @@ header {
   margin: 0 auto;
 }
 
+.main-content {
+  min-height: 410px;
+  width: 940px;
+}
+
+.main-content .option {
+  float: left;
+  width: 300px;
+  margin: 0 0 20px 20px;
+  border: none;
+  height: 120px;
+}
+
+.main-content .option:first-child {
+  margin-left: 0;
+}
+
+.main-content .option:last-child {
+  margin-bottom: 0;
+}
+
+.option a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Cuprum", "Arial", sans-serif;
+  display: block;
+  width: 135px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.option span {
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 22px;
+  margin-left: 22px;
+  display: block;
+}
+
+.option .new {
+  position: absolute;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+.option img {
+  float: right;
+  width: 300px;
+}
+
 .materials {
   background-color: #f6b22d;
 }
@@ -709,48 +761,6 @@ header {
 
 .delivery {
   background-color: #f6b22d;
-}
-
-.option {
-  width: 288px;
-  height: 123px;
-  margin: 10px;
-  border: 1px solid transparent;
-}
-
-.option a {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Cuprum", "Arial", sans-serif;
-  display: block;
-  width: 135px;
-  height: 30px;
-  margin-top: 20px;
-  margin-left: 20px;
-  text-align: center;
-  padding-top: 10px;
-  border-radius: 5px;
-}
-
-.option span {
-  font-family: "Cuprum", "Arial", sans-serif;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-left: 20px;
-  display: block;
-}
-
-.option .new {
-  position: absolute;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-}
-
-.option img {
-  float: right;
-  width: 300px;
 }
 
 .materials img {
@@ -812,6 +822,10 @@ header {
   min-height: 80px;
 }
 
+.items-title {
+  margin-top: 50px;
+}
+
 .items-title h2 {
   float: left;
   text-transform: uppercase;
@@ -828,21 +842,11 @@ header {
   margin: 30px;
 }
 
-.brands-title a,
-.items-title a {
+.brands-title .all-btns,
+.items-title .all-btns {
   float: right;
-  text-transform: uppercase;
-  color: #ffffff;
   width: 250px;
-  height: 40px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  background-color: #ee3643;
-  text-align: center;
-  vertical-align: middle;
   display: inline-block;
-  line-height: 40px;
   margin: 25px;
 }
 
@@ -1066,21 +1070,8 @@ header {
   margin: 40px 0 0;
 }
 
-.about-company a {
+.about-company-btn {
   width: 220px;
-  height: 40px;
-  text-decoration: none;
-  background-color: #ee3643;
-  display: block;
-  text-align: center;
-  line-height: 40px;
-  margin-top: 35px;
-}
-
-.about-company span {
-  color: #ffffff;
-  text-transform: uppercase;
-  vertical-align: middle;
 }
 
 .contacts {
@@ -1096,20 +1087,6 @@ header {
 .contacts img {
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-.feedback-btn {
-  width: 300px;
-  height: 40px;
-  text-decoration: none;
-  background-color: #ee3643;
-  display: block;
-  text-align: center;
-  line-height: 40px;
-  color: #ffffff;
-  text-transform: uppercase;
-  vertical-align: middle;
-  border: none;
 }
 
 .hidden-form {
@@ -1372,22 +1349,10 @@ header {
 }
 
 .slider .slider-cta {
-  background-color: #ee3643;
   width: 190px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
   top: 200px;
   left: 25px;
-}
-
-.slider .slider-cta a {
-  text-decoration: none;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-  vertical-align: middle;
+  height: 29px;
 }
 
 .slider .slider-pager {
@@ -1395,13 +1360,36 @@ header {
   left: 300px;
 }
 
-.main-content .option {
-  float: left;
-  width: 300px;
-  margin: 0 0 20px 20px;
-  border: none;
+.all-btns,
+.all-btns a {
+  text-align: center;
+  padding: 10px 0 0;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 14px;
 }
 
-.main-content .option:first-child {
-  margin-left: 0;
+.all-btns {
+  border-radius: 2px;
+  background-color: #ee3643;
+  height: 30px;
+}
+
+.checkout-btn,
+.feedback-btn {
+  border: none;
+  display: inline-block;
+  height: 40px;
+  padding: 0;
+}
+
+.feedback-btn {
+  width: 300px;
+}
+
+.checkout-btn {
+  width: 220px;
 }
