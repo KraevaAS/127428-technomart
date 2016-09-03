@@ -1393,3 +1393,33 @@ header {
 .checkout-btn {
   width: 220px;
 }
+
+.price {
+  background-color: #ee3643;
+  text-align: center;
+  width: 120px;
+  height: 29px;
+  border-radius: 2px;
+  padding: 11px 0 0;
+  margin: 0 25px 20px;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+}
+
+.price::after {
+  content: "";
+  display: table;
+  border: 20px solid transparent;
+  border-left-color: #ee3643;
+  width: 0;
+  height: 0;
+  position: relative;
+  margin: auto;
+  left: 79px;
+  top: -29px;
+}
