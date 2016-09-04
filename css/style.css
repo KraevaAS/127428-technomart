@@ -1391,13 +1391,22 @@ header {
   margin: 35px 80px 35px 80px;
 }
 
-.price {
+
+.item-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 204px;
+  height: 57px;
+  text-align: center;
+}
+
+.item-bottom .price {
   background-color: #ee3643;
   text-align: center;
-  width: 120px;
+  min-width: 70px;
   height: 29px;
   border-radius: 2px;
-  padding: 11px 0 0;
+  padding: 11px 15px 0 35px;
   margin: 0 25px 20px;
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1405,10 +1414,10 @@ header {
   line-height: 18px;
   font-size: 17px;
   font-weight: bold;
-  display: block;
+  display: inline-block;
 }
 
-.price::after {
+.item-bottom .price::after {
   content: "";
   display: table;
   border: 20px solid transparent;
@@ -1417,7 +1426,7 @@ header {
   height: 0;
   position: relative;
   margin: auto;
-  left: 79px;
+  left: 69px;
   top: -29px;
 }
 
