@@ -685,6 +685,11 @@ header {
   margin-bottom: 0;
 }
 
+.option {
+  position: relative;
+  overflow: hidden;
+}
+
 .option a {
   text-decoration: none;
   color: #ffffff;
@@ -709,11 +714,6 @@ header {
   margin-top: 22px;
   margin-left: 22px;
   display: block;
-}
-
-.option .new {
-  position: absolute;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
 }
 
 .option img {
@@ -1301,19 +1301,19 @@ header {
 }
 
 .slider .slider-inner {
-  width: 1240px;
+  width: 200%;
 }
 
 .slider .slider-page {
   float: left;
-  height: 266px;
+  height: 242px;
   width: 620px;
   position: relative;
 }
 
 .slider .slider-page-content {
   width: 620px;
-  height: 266px;
+  height: 260px;
 }
 
 .slider .slider-page-content h2 {
@@ -1332,7 +1332,7 @@ header {
   line-height: 24px;
 }
 
-.sider .slider-page img {
+.slider-pager img {
   top: 0;
   left: 0;
 }
@@ -1347,6 +1347,65 @@ header {
 .slider .slider-pager {
   top: 210px;
   left: 300px;
+}
+
+.slider .slider-prevnext {
+  position: relative;
+}
+
+i.icon-prev::after {
+  content: "\3c";
+  left: 0px;
+  padding-left: 25px;
+}
+
+i.icon-next::after {
+  content: "\3e";
+  right: 0px;
+  padding-right: 20px;
+}
+
+i.icon-prev::after, i.icon-next::after {
+    font-size: 45px;
+    color: #ffffff;
+    position: absolute;
+    top: 125px;
+}
+
+.slider-pager input[type=radio] {
+    display: none;
+}
+
+.slider-pager-controls {
+  margin: 0 100px 0 100px;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 286px 26px 292px;
+}
+
+.slider-pager-controls label {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 3px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-pager-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-pager-controls label[for="btn-2"] {
+    background-color: #ee3643;
+}
+
+#btn-1:checked ~ .slider .slider-inner {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider .slider-inner {
+    transform: translate(-620px);
 }
 
 .all-btns,
@@ -1478,7 +1537,8 @@ line-height: 175px;
   overflow: hidden;
 }
 
-.item .new {
+.item .new,
+.option .new {
   position: absolute;
   width: 88px;
   height: 26px;
@@ -1489,7 +1549,15 @@ line-height: 175px;
   font-size: 15px;
   transform: rotate(45deg);
   text-align: center;
+  vertical-align: middle;
+}
+
+.item .new {
   top: 5px;
   left: 155px;
-  vertical-align: middle;
+}
+
+.option .new {
+top: -17px;
+left: 214px;
 }
