@@ -876,35 +876,17 @@ header {
   height: 525px;
 }
 
-.content li {
-  list-style-type: none;
-  width: 240px;
-  height: 60px;
-  background-color: #32425c;
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "Cuprum", "Arial", sans-serif;
-  color: #ffffff;
-  padding-left: 20px;
-  display: inline-block;
-  line-height: 60px;
-}
-
-.content span {
-  vertical-align: middle;
-}
-
 .services {
   width: 960px;
   margin: 0 auto;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .services h2 {
   text-transform: uppercase;
   margin: 0;
-  padding-top: 70px;
-  padding-bottom: 35px;
+  padding-top: 63px;
+  padding-bottom: 26px;
 }
 
 .services p {
@@ -919,10 +901,26 @@ header {
 
 .services-group ul {
   float: left;
-  width: 250px;
-  padding-top: 40px;
+  width: 230px;
+  padding-top: 66px;
   margin: 0;
   padding-left: 0;
+}
+
+
+.services-group li {
+  list-style-type: none;
+  width: 218px;
+  height: 46px;
+  background-color: #32425c;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
+  padding-left: 22px;
+  display: inline-block;
+  line-height: 30px;
+  padding-top: 16px;
 }
 
 .services-group img {
@@ -941,18 +939,20 @@ header {
 
 .delivery-bottom {
   float: left;
-  width: 600px;
-  padding-left: 80px;
-  height: 340px;
+  width: 617px;
+  padding: 33px 0 0 62px;
+  height: 320px;
   background-image: url("/img/car-kamaz.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .delivery-bottom h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0 30px 0;
   color: #32425c;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 24px;
 }
 
 .delivery-bottom p {
