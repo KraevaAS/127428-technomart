@@ -97,16 +97,6 @@
     </header>
     <main>
       <div class="container">
-        <div class="cta-window">
-          <div class="cta-window-top">
-            <button class="exit-btn"><img src="img/cross.png" alt="Выйти" width="21" height="21"></button>
-            <span>Товар добавлен в корзину!</span>
-          </div>
-          <div class="cta-window-bottom">
-            <button class="all-btns checkout-btn">Оформить заказ</button>
-            <button class="continue-btn">Продолжить покупки</button>
-          </div>
-        </div>
         <div class="catalog-breadcrumbs">
           <ul>
             <li>
@@ -369,6 +359,16 @@
           </div>
         </div>
       </div>
+      <div class="cta-window">
+        <div class="cta-window-top">
+          <button class="exit-btn"><img src="img/cross.png" alt="Выйти" width="21" height="21"></button>
+          <span>Товар добавлен в корзину!</span>
+        </div>
+        <div class="cta-window-bottom">
+          <button class="all-btns checkout-btn">Оформить заказ</button>
+          <button class="continue-btn">Продолжить покупки</button>
+        </div>
+      </div>
     </main>
     <div class="description-container">
       <div class="description">
@@ -433,10 +433,20 @@
         </div>
       </div>
       <div class="footer-bottom-container">
-        <div class="footer-bottom">
+        <div class="footer-bottom clearfix">
           <div class="footer-company-name">
-            <p>&copy;2010-2016 Компания &laquo;Техномарт&raquo;</p>
+            <p>&copy; 2010-2016 Компания &laquo;Техномарт&raquo;</p>
             <p>Все права защищены</p>
+          </div>
+          <div class="footer-bottom-contacts">
+            <div class="footer-website">
+              <p>Разработано -</p>
+              <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+            </div>
+            <div class="footer-mail">
+              <p>Обратная связь</p>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
           </div>
           <div class="footer-social">
             <a class="social-btn social-btn-vk" href="#">
@@ -449,19 +459,12 @@
               <i class="icon-inst"></i>
             </a>
           </div>
-          <div class="footer-bottom-contacts">
-            <div class="footer-mail">
-              <p>Обратная связь</p>
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="footer-website">
-              <p>Разработано -</p>
-              <a href="http://htmlacademy.ru">htmlacademy.ru</a>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/catalog.js"></script>
   </body>
 
 </html>
