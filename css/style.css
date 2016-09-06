@@ -140,21 +140,22 @@ i.icon-breadcrumbs::after {
   color: #c1c6ce;
 }
 
-i.icon-ascending,
-i.icon-descending {
+.icon-ascending,
+.icon-descending {
   padding: 0px;
   cursor: pointer;
 }
 
-i.icon-ascending::after {
+.icon-ascending::after {
   content: '\25b2';
-  font-size: 13px;
-  line-height: 20px;
-  color: #ee3643;
 }
 
-i.icon-descending::after {
+.icon-descending::after {
   content: '\25bc';
+}
+
+.icon-ascending::after,
+.icon-descending::after {
   font-size: 13px;
   line-height: 20px;
   color: #c6c2bd;
@@ -230,8 +231,9 @@ header {
 }
 
 .header-top .search input {
-  float: left;
-  width: 270px;
+  float: right;
+  width: 100%;
+  height: 100%;
   background: transparent;
   border: none;
   width: 220px;
@@ -276,6 +278,7 @@ header {
   text-align: center;
   padding-top: 10px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .header-center {
@@ -333,7 +336,7 @@ header {
   float: left;
 }
 
-.header-center .login-in {
+.header-center .login-in-container {
   line-height: 24px;
 }
 
@@ -341,7 +344,7 @@ header {
   color: #000000;
 }
 
-.login-in .enter {
+.login-in-container .enter {
   float: right;
   display: inline-block;
   width: 120px;
@@ -354,7 +357,7 @@ header {
   word-spacing: -6px;
 }
 
-.login-in .registration {
+.login-in-container .registration {
   float: right;
   display: inline-block;
   width: 150px;
@@ -433,13 +436,6 @@ header {
   padding-bottom: 60px;
 }
 
-.header-bottom a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 17px;
-}
-
 .header-bottom ul {
   height: 55px;
   padding: 0;
@@ -460,11 +456,20 @@ header {
 }
 
 .header-bottom li {
+list-style-type: none;
+display: inline-block;
+  height: 100%;
+}
+
+.header-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
   display: inline-block;
   padding: 19px 30px 0px 30px;
   color: #ffffff;
   line-height: 17px;
-  list-style-type: none;
   height: 100%;
   box-sizing: border-box;
 }
@@ -698,20 +703,10 @@ display: inline-block;
   font-size: 14px;
 }
 
-#battery:checked ~ label[for="battery"]::before,
-#network:checked ~ label[for="network"]::before,
-#battery ~ label[for="battery"]::before,
-#network ~ label[for="network"]::before,
-#bosch ~ label[for="bosch"]::before,
-#bosch:checked ~ label[for="bosch"]::before,
-#interskol ~ label[for="interskol"]::before,
-#interskol:checked ~ label[for="interskol"]::before,
-#makita ~ label[for="makita"]::before,
-#makita:checked ~ label[for="makita"]::before,
-#dewalt ~ label[for="dewalt"]::before,
-#dewalt:checked ~ label[for="dewalt"]::before,
-#hitachi ~ label[for="hitachi"]::before,
-#hitachi:checked ~ label[for="hitachi"]::before {
+.input-manufacture:checked + label::before,
+.input-manufacture + label::before,
+.input-power:checked + label::before,
+ .input-power + label::before {
   font-family: "symbols-technomart";
   font-style: normal;
   font-size: 14px;
@@ -723,30 +718,19 @@ display: inline-block;
   padding-right: 15px;
 }
 
-#bosch ~ label[for="bosch"]::before,
-#interskol ~ label[for="interskol"]::before,
-#makita ~ label[for="makita"]::before,
-#dewalt ~ label[for="dewalt"]::before,
-#hitachi ~ label[for="hitachi"]::before {
+.input-manufacture + label::before {
 content: '\2610';
 }
 
-#bosch:checked ~ label[for="bosch"]::before,
-#interskol:checked ~ label[for="interskol"]::before,
-#makita:checked ~ label[for="makita"]::before,
-#dewalt:checked ~ label[for="dewalt"]::before,
-#hitachi:checked ~ label[for="hitachi"]::before {
+.input-manufacture:checked + label::before {
   content: '\2611';
 }
 
-
-#battery:checked ~ label[for="battery"]::before,
-#network:checked ~ label[for="network"]::before {
+.input-power:checked + label::before {
     content: '\25cf';
 }
 
-#battery ~ label[for="battery"]::before,
-#network ~ label[for="network"]::before {
+.input-power + label::before {
   content: '\25cb';
 }
 
@@ -1596,6 +1580,7 @@ height: 45px;
   height: 40px;
   border-radius: 50%;
 line-height: 40px;
+text-decoration: none;
 }
 
 .footer-company-name p {
@@ -1917,14 +1902,14 @@ left: 214px;
 }
 
 
-.logo span, .logo a {
+.logo span, a.logo {
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   padding-top: 11px;
   color: #ffffff;
 }
 
-.logo a {
+a.logo {
     font-size: 24px;
     line-height: 24px;
 }
@@ -1988,10 +1973,14 @@ input:focus {
   width: 700px;
 }
 
-
 .logo:hover {
   background-color: #ca2c37;
   border-color: #9a212a;
+}
+
+a.logo:active {
+  background-color: #ba2732;
+  border-color: #8e1e26;
 }
 
 .bookmarks:hover,
@@ -2000,33 +1989,80 @@ input:focus {
 background-color: #212a3a;
 }
 
+a.basket:active,
+a.bookmarks:active {
+  background-color: #161d29;
+}
+
+.icon-bookmarks:hover:after,
+.icon-basket:hover:after,
+.icon-search:hover::after {
+    opacity: 1;
+}
+
+.icon-bookmarks:active:after,
+.icon-basket:active:after {
+    opacity: 0.3;
+}
+
 .checkout:hover {
   background-color: #5fbb2d;
 }
 
-.login-in .enter a:hover,
-.login-in .registration a:hover {
+a.checkout:active {
+background-color: #518534;
+}
+
+.enter a:hover,
+.registration a:hover {
   color: #ee3643;
+}
+
+.icon-enter:hover:after,
+.icon-login-in:hover:after,
+.icon-login-out:hover:after {
+  color: #32425c;
 }
 
 .profile a:hover {
   color: #32425c;
 }
 
+.enter a:active,
+.registration a:active,
+.profile a:active,
+.under-personal-area a:active
+ {
+  color: #c5c5c5;
+}
+
 .under-personal-area a:hover {
   color: #ee3643;
 }
 
-.header-bottom li:hover {
+.header-bottom a:hover {
   background-color: #293449;
+}
+
+.header-bottom a:active {
+  background-color: #1d2739;
+  opacity: 0.3;
 }
 
 .option a:hover {
     background-color: rgba(178, 178, 178, 0.7);
 }
 
+.option a:active {
+    background-color: rgba(178, 178, 178, 1);
+}
+
 .all-btns:hover {
   background-color: #ca2c37;
+}
+
+.all-btns:active {
+  background-color: #ba2732;
 }
 
 .item:hover {
@@ -2034,16 +2070,31 @@ background-color: #212a3a;
   box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-.brand:hover {
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-}
-
 .cta-btns .buy-btn:hover {
   background-color: #5fbb2d;
 }
 
+.cta-btns .buy-btn:active {
+  background-color: #518534;
+  border-color: #518534;
+}
+
 .cta-btns .favorites-btn:hover {
   border-color: #32425c;
+}
+
+.cta-btns .favorites-btn:active {
+border-color: #c1c6ce;
+opacity: 0.3;
+}
+
+.brand:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.brand:active {
+  box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+  opacity: 0.3;
 }
 
 .sort-btns button:hover {
@@ -2054,4 +2105,66 @@ background-color: #212a3a;
 .sort-btns button:active {
 color: #ee3643;
 border-bottom: none;
+}
+
+.icon-ascending:hover::after,
+.icon-descending:hover::after {
+  color: #010101;
+}
+
+.icon-ascending:active::after,
+.icon-descending:active::after {
+  color: #ee3643;
+}
+
+.pager a:hover {
+  border-color: #bdc6ca;
+}
+
+.pager a:active {
+  border-color: #ee3643;
+}
+
+.input-manufacture:checked + label:hover::before,
+.input-manufacture + label:hover::before,
+.input-power:checked + label:hover::before,
+ .input-power + label:hover::before  {
+  color: #b5b5b5;
+}
+
+.services-group li:hover {
+  background-color: #293449;
+}
+
+.services-group li:active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  opacity: 0.3;
+}
+
+.social-btn:hover,
+.social-btn:active {
+  background-color: #ee3643;
+}
+
+.footer-mail a:hover,
+.footer-website a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail a:active,
+.footer-website a:active {
+  color: #ee3643;
+}
+
+.search input:focus {
+  background-color: #ffffff;
+  color: #000000;
 }

@@ -15,32 +15,22 @@
     <header class="header-catalog">
       <div class="header-top">
         <div class="header-top-container">
-          <div class="logo">
-            <h1>
-              <a href="index.html">Техномарт</a>
-            </h1>
-          </div>
+          <a class="logo">
+            <h1>Техномарт</h1>
+          </a>
           <div class="search-container clearfix">
             <form class="search">
               <i class="icon-search"></i>
               <input type="search" id="search" placeholder="Поиск:">
             </form>
           </div>
-          <div class="checkout">
-            <a href="#">Оформить заказ</a>
-          </div>
-          <div class="basket basket-catalog">
-            <i class="icon-basket"></i>
-            <a href="#">Корзина:
+          <a class="checkout">Оформить заказ</a>
+            <a href="#" class="basket basket-catalog"><i class="icon-basket"></i>Корзина:
               <span>10</span>
             </a>
-          </div>
-          <div class="bookmarks">
-            <i class="icon-bookmarks"></i>
-            <a href="#">Закладки:
+            <a href="#" class="bookmarks"><i class="icon-bookmarks"></i>Закладки:
               <span>0</span>
             </a>
-          </div>
         </div>
       </div>
       <div class="header-center clearfix">
@@ -148,23 +138,23 @@
             <span>Производители:</span>
             <ul>
               <li>
-                <input type="checkbox" id="bosch" checked>
+                <input type="checkbox" id="bosch" class="input-manufacture" checked>
                 <label for="bosch">Bosch</label>
               </li>
               <li>
-                <input type="checkbox" id="interskol">
+                <input type="checkbox" id="interskol" class="input-manufacture">
                 <label for="interskol">Интерскол</label>
               </li>
               <li>
-                <input type="checkbox" id="makita" checked>
+                <input type="checkbox" id="makita" class="input-manufacture" checked>
                 <label for="makita">Makita</label>
               </li>
               <li>
-                <input type="checkbox" id="dewalt">
+                <input type="checkbox" class="input-manufacture" id="dewalt">
                 <label for="dewalt">Dewalt</label>
               </li>
               <li>
-                <input type="checkbox" id="hitachi">
+                <input type="checkbox" class="input-manufacture" id="hitachi">
                 <label for="hitachi">Hitachi</label>
               </li>
             </ul>
@@ -173,11 +163,11 @@
             <span>Питание:</span>
             <ul>
               <li>
-                <input type="radio" id="battery" name="power" checked>
+                <input type="radio" id="battery" name="power" class="input-power" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
               <li>
-                <input type="radio" id="network" name="power">
+                <input type="radio" id="network" name="power" class="input-power">
                 <label for="network">Сетевые</label>
               </li>
             </ul>
@@ -193,11 +183,9 @@
             <button class="btn-functional">По функционалу</button>
           </div>
           <div class="ascending-descending">
-            <button class="btn-ascending">
-              <i class="icon-ascending"></i>
+            <button class="icon-ascending btn-ascending">
             </button>
-            <button class="btn-descending">
-              <i class="icon-descending"></i>
+            <button class="icon-descending btn-descending">
             </button>
           </div>
         </div>
