@@ -1191,7 +1191,7 @@ a.login-in {
 .services-group ul {
   float: left;
   width: 230px;
-  padding: 46px 0 46px 0;
+  padding: 46px 0;
   margin: 0;
   padding-left: 0;
 }
@@ -1325,7 +1325,7 @@ a.login-in {
 .content-bottom,
 .map-popup {
   width: 940px;
-  margin: 30px auto 50px auto;
+  margin: 30px auto 50px;
 }
 
 .content-bottom {
