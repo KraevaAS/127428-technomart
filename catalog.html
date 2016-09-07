@@ -14,23 +14,19 @@
   <body>
     <header class="header-catalog">
       <div class="header-top">
-        <div class="header-top-container">
-          <a class="logo">
+        <div class="header-top-container clearfix">
+          <a href="index.html" class="logo">
             <h1>Техномарт</h1>
           </a>
-          <div class="search-container clearfix">
-            <form class="search">
-              <i class="icon-search"></i>
-              <input type="search" id="search" placeholder="Поиск:">
-            </form>
-          </div>
+          <form class="search clerfix" action="/echo" method="get">
+            <input type="search" id="search" placeholder="Поиск:" class="search-input">
+            <button id="search-submit" type="submit" class="search-btn icon-search"></button>
+          </form>
           <a class="checkout">Оформить заказ</a>
-          <a href="#" class="basket basket-catalog">
-            <i class="icon-basket"></i>Корзина:
+          <a href="#" class="basket basket-catalog icon-basket">Корзина:
             <span>10</span>
           </a>
-          <a href="#" class="bookmarks">
-            <i class="icon-bookmarks"></i>Закладки:
+          <a href="#" class="bookmarks icon-bookmarks">Закладки:
             <span>0</span>
           </a>
         </div>
@@ -39,20 +35,13 @@
         <span class="description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</span>
         <div class="header-contacts">
           <div class="phone">
-            <i class="icon-phone"></i>
-            <span>+7 (812) 555-05-55</span>
+            <span class="icon-phone">+7 (812) 555-05-55</span>
           </div>
           <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="personal-area clearfix">
           <div class="profile">
-            <a href="#">
-              <i class="icon-login-in"></i>
-            </a>
-            <a href="#" class="name">Равшан Джамшутович</a>
-            <a href="#">
-              <i class="icon-login-out"></i>
-            </a>
+            <a href="#" class="name icon-login-in icon-login-out">Равшан Джамшутович</a>
           </div>
           <div class="under-personal-area">
             <a href="#">Мои заказы</a>
@@ -61,7 +50,7 @@
           </div>
         </div>
       </div>
-      <nav class="header-bottom navigation">
+      <nav class=" header-bottom navigation">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -92,21 +81,16 @@
         <div class="catalog-breadcrumbs">
           <ul>
             <li>
-              <a href="#">
-                <i class="icon-home"></i>
-              </a>
+              <a href="#" class="icon-home"></a>
             </li>
             <li>
-              <i class="icon-breadcrumbs"></i>
-              <a href="#">Каталог</a>
+              <a href="#" class="icon-breadcrumbs">Каталог</a>
             </li>
             <li>
-              <i class="icon-breadcrumbs"></i>
-              <a href="#">Инструмент</a>
+              <a href="#" class="icon-breadcrumbs">Инструмент</a>
             </li>
             <li>
-              <i class="icon-breadcrumbs"></i>
-              <span>Перфораторы</span>
+              <span class="icon-breadcrumbs">Перфораторы</span>
             </li>
           </ul>
         </div>
@@ -459,15 +443,9 @@
             </div>
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">
-              <i class="icon-vk"></i>
-            </a>
-            <a class="social-btn social-btn-fb" href="#">
-              <i class="icon-fb"></i>
-            </a>
-            <a class="social-btn social-btn-inst" href="#">
-              <i class="icon-inst"></i>
-            </a>
+            <a class="social-btn social-btn-vk icon-vk" href="#"></a>
+            <a class="social-btn social-btn-fb icon-fb" href="#"></a>
+            <a class="social-btn social-btn-inst icon-inst" href="#"></a>
           </div>
         </div>
       </div>

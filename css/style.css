@@ -31,109 +31,114 @@ h2 {
   line-height: 30px;
 }
 
-i {
+[class*='icon-']:after,
+[class*='icon-']:before,
+[class^='icon-']:after,
+[class^='icon-']:before {
   font-family: "symbols-technomart";
-  padding: 15px;
+  padding: 10px;
   font-style: normal;
 }
 
-i.icon-search::after {
+.icon-search::before {
+  font-family: "symbols-technomart";
+  font-style: normal;
   content: "\1f50d";
   font-size: 17px;
   color: #ffffff;
   opacity: 0.3;
 }
 
-i.icon-bookmarks::after {
+.icon-bookmarks::before {
   content: "\1f516";
   font-size: 17px;
   color: #ffffff;
   opacity: 0.3;
 }
 
-i.icon-basket::after {
+.icon-basket::before {
   content: "\62";
   font-size: 17px;
   color: #ffffff;
   opacity: 0.3;
 }
 
-i.icon-phone::after {
+.icon-phone::before {
   content: "\1f4de";
   font-size: 22px;
   color: #b7bfc8;
 }
 
-i.icon-enter::after {
+.icon-enter::before {
   content: "\2386";
   font-size: 22px;
   color: #c5c5c5;
 }
 
-i.icon-login-in::after {
+.icon-login-in::before {
   content: "\1f468";
   font-size: 18px;
   color: #c5c5c5;
   line-height: 18px;
 }
 
-i.icon-login-out::after {
+.icon-login-out::after {
   content: "\241b";
   font-size: 22px;
   color: #c5c5c5;
   line-height: 18px;
 }
 
-i.icon-vk::after {
+.icon-vk::after {
   content: "\76";
   color: #ffffff;
   font-size: 18px;
 }
 
-i.icon-fb::after {
+.icon-fb::after {
   content: "\66";
   color: #ffffff;
   font-size: 18px;
 }
 
-i.icon-inst::after {
+.icon-inst::after {
   content: "\1f4f7";
   color: #ffffff;
   font-size: 18px;
 }
 
-i.icon-prev::after {
+.icon-prev::after {
   content: "\3c";
   left: 0;
   padding-left: 25px;
 }
 
-i.icon-next::after {
+.icon-next::after {
   content: "\3e";
   right: 0;
   padding-right: 20px;
 }
 
-i.icon-home::after {
+.icon-home::after {
   content: "\1f3e0";
   color: #c1c6ce;
   font-size: 13px;
   line-height: 20px;
 }
 
-i.icon-home {
+.icon-home {
   padding: 0;
 }
 
-i.icon-next::after,
-i.icon-prev::after {
+.icon-next::after,
+.icon-prev::after {
   font-size: 45px;
   color: #ffffff;
   position: absolute;
   top: 125px;
 }
 
-i.icon-breadcrumbs::after {
+.icon-breadcrumbs::after {
   content: "\3e";
   font-size: 13px;
   line-height: 20px;
@@ -161,18 +166,18 @@ i.icon-breadcrumbs::after {
   color: #c6c2bd;
 }
 
-i.icon-checkbox::after {
+.icon-checkbox::before {
   content: "\2610";
 }
 
-i.icon-checkbox-checked::after {
+.icon-checkbox-checked::before {
   content: "\2611";
 }
 
-i.icon-checkbox,
-i.icon-checkbox-checked,
-i.icon-radio,
-i.icon-radio-checked {
+.icon-checkbox,
+.icon-checkbox-checked,
+.icon-radio,
+.icon-radio-checked {
   padding-left: 0;
 }
 
@@ -208,19 +213,10 @@ header {
   line-height: 18px;
 }
 
-.header-top .search-container {
+.header-top .search {
+  position: relative;
   float: left;
   width: 270px;
-}
-
-.search .icon-search {
-  float: left;
-  width: 18px;
-  padding-top: 11px;
-}
-
-.header-top .search {
-  float: left;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
@@ -229,22 +225,38 @@ header {
   height: 100%;
 }
 
-.header-top .search input {
+.search-input {
   float: right;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
   width: 220px;
-  padding: 10px 0 0;
-  font-family: "Cuprum", "Arial", sans-serif;
+  height: 100%;
+  padding: 0;
+  border: none;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
+  background-color: #293449;
 }
 
-.header-top .search label {
-  display: none;
+.search-btn {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #6a7180;
+  background-color: #293449;
+  border: none;
+  padding: 10px;
+}
+
+.search .icon-search:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 17px;
+  width: 50px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .header-top .bookmarks {
@@ -339,7 +351,7 @@ header {
   line-height: 24px;
 }
 
-.login-in a {
+a.login-in {
   color: #000000;
 }
 
@@ -386,23 +398,11 @@ header {
   font-size: 21px;
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
-}
-
-.profile .icon-login-in {
-  float: left;
-  width: 20px;
-  padding: 0 14px 0 15px;
-}
-
-.profile .icon-login-out {
-  float: right;
-  width: 30px;
-  padding: 0;
+  padding: 0 17px;
 }
 
 .profile .name {
-  float: left;
-  width: 220px;
+  width: 100%;
 }
 
 .header-center .under-personal-area {
@@ -411,7 +411,7 @@ header {
   padding-left: 20px;
 }
 
-.header-center .under-personal-area a {
+.under-personal-area a {
   color: #32425c;
   text-decoration: underline;
   font-size: 16px;
@@ -799,7 +799,6 @@ header {
 }
 
 .ascending-descending button {
-  margin-right: 10px;
   background-color: #f7f3ec;
   cursor: pointer;
   border: none;
@@ -913,14 +912,6 @@ header {
 
 .cta-btns button {
   display: block;
-}
-
-.item:hover .item-top .cta-btns {
-  display: inline-block;
-}
-
-.item:hover .item-top img {
-  display: none;
 }
 
 .cta-btns button {
@@ -1641,7 +1632,7 @@ header {
 
 .slider .slider-page {
   float: left;
-  height: 242px;
+  height: 260px;
   width: 620px;
   position: relative;
 }
@@ -1919,18 +1910,6 @@ a.logo {
   cursor: pointer;
 }
 
-button,
-button:active,
-button:focus {
-  outline: none;
-}
-
-input,
-input:active,
-input:focus {
-  outline: none;
-}
-
 .pager a,
 .pager span {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1970,6 +1949,14 @@ input:focus {
   width: 700px;
 }
 
+.item:hover .item-top .cta-btns {
+  display: inline-block;
+}
+
+.item:hover .item-top img {
+  display: none;
+}
+
 .logo:hover {
   background-color: #ca2c37;
   border-color: #9a212a;
@@ -1981,8 +1968,7 @@ a.logo:active {
 }
 
 .basket:hover,
-.bookmarks:hover,
-.search:hover {
+.bookmarks:hover {
   background-color: #212a3a;
 }
 
@@ -1991,14 +1977,13 @@ a.bookmarks:active {
   background-color: #161d29;
 }
 
-.icon-basket:hover:after,
-.icon-bookmarks:hover:after,
-.icon-search:hover::after {
+.icon-basket:hover::before,
+.icon-bookmarks:hover::before {
   opacity: 1;
 }
 
-.icon-basket:active:after,
-.icon-bookmarks:active:after {
+.icon-basket:active::before,
+.icon-bookmarks:active::before {
   opacity: 0.3;
 }
 
@@ -2010,14 +1995,14 @@ a.checkout:active {
   background-color: #518534;
 }
 
-.enter a:hover,
-.registration a:hover {
+a.enter:hover,
+a.registration:hover {
   color: #ee3643;
 }
 
-.icon-enter:hover:after,
-.icon-login-in:hover:after,
-.icon-login-out:hover:after {
+.icon-enter:hover::before,
+.icon-login-in:hover::before,
+.icon-login-out:hover::after {
   color: #32425c;
 }
 
@@ -2025,10 +2010,17 @@ a.checkout:active {
   color: #32425c;
 }
 
-.enter a:active,
+.icon-enter:active::before,
+.icon-login-in:active::before,
+.icon-login-out:active::after,
 .profile a:active,
-.registration a:active,
-.under-personal-area a:active {
+.under-personal-area a:active,
+a.enter:active,
+a.registration:active {
+  color: #c5c5c5;
+}
+
+a.under-personal:active {
   color: #c5c5c5;
 }
 
@@ -2128,6 +2120,13 @@ a.checkout:active {
   color: #b5b5b5;
 }
 
+.input-manufacture:disabled + label,
+.input-manufacture:disabled + label::before,
+.input-power:disabled + label,
+.input-power:disabled + label::before {
+  color: #e9e9e9;
+}
+
 .services-group li:hover {
   background-color: #293449;
 }
@@ -2160,9 +2159,56 @@ a.checkout:active {
   color: #ee3643;
 }
 
-.search input:focus {
+button,
+button:active,
+button:focus,
+input,
+input:active,
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.search:hover,
+.search:hover .search-btn,
+.search:hover > .search-input {
+  background-color: #212a3a;
+  color: #ffffff;
+}
+
+.icon-search:hover::before,
+.search-input:hover + .icon-search::before {
+  opacity: 1;
+}
+
+.search-input:focus,
+.search-input:focus + .icon-search::before {
   background-color: #ffffff;
+}
+
+.search-input:focus {
   color: #000000;
 }
 
-.search input + .icon-search {}
+.search-input:focus + .icon-search::before {
+  color: #ee3643;
+  opacity: 1;
+}
+
+.search-input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.search-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+
+.search-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+
+.search-input:-ms-input-placeholder {
+  color: #ffffff;
+}

@@ -14,23 +14,19 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <div class="header-top-container">
+        <div class="header-top-container clearfix">
           <a href="index.html" class="logo">
             <h1>Техномарт</h1>
           </a>
-          <div class="search-container clearfix">
-            <form class="search">
-              <input type="search" id="search" placeholder="Поиск:">
-              <i class="icon-search"></i>
-            </form>
-          </div>
+          <form class="search clerfix" action="/echo" method="get">
+            <input type="search" id="search" placeholder="Поиск:" class="search-input">
+            <button id="search-submit" type="submit" class="search-btn icon-search"></button>
+          </form>
           <a class="checkout">Оформить заказ</a>
-          <a href="#" class="basket">
-            <i class="icon-basket"></i>Корзина:
+          <a href="#" class="basket icon-basket">Корзина:
             <span>0</span>
           </a>
-          <a href="#" class="bookmarks">
-            <i class="icon-bookmarks"></i>Закладки:
+          <a href="#" class="bookmarks icon-bookmarks">Закладки:
             <span>0</span>
           </a>
         </div>
@@ -39,19 +35,13 @@
         <span class="description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</span>
         <div class="header-contacts">
           <div class="phone">
-            <i class="icon-phone"></i>
-            <span>+7 (812) 555-05-55</span>
+            <span class="icon-phone">+7 (812) 555-05-55</span>
           </div>
           <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="login-in-container">
-          <div class="login-in registration">
-            <a href="#">Регистрация</a>
-          </div>
-          <div class="login-in enter">
-            <i class="icon-enter"></i>
-            <a href="#">Войти</a>
-          </div>
+          <a href="#" class="login-in registration">Регистрация</a>
+          <a href="#" class="icon-enter login-in enter">Войти</a>
         </div>
       </div>
       <nav class="header-bottom navigation">
@@ -121,7 +111,7 @@
               </div>
             </div>
             <div class="slider-prevnext">
-              <i class="icon-prev"></i>
+              <i class=" icon-prev"></i>
               <i class="icon-next"></i>
             </div>
             <a href="#" class="all-btns slider-cta">Открыть каталог</a>
@@ -416,15 +406,9 @@
             </div>
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">
-              <i class="icon-vk"></i>
-            </a>
-            <a class="social-btn social-btn-fb" href="#">
-              <i class="icon-fb"></i>
-            </a>
-            <a class="social-btn social-btn-inst" href="#">
-              <i class="icon-inst"></i>
-            </a>
+            <a class="social-btn social-btn-vk icon-vk" href="#"></a>
+            <a class="social-btn social-btn-fb icon-fb" href="#"></a>
+            <a class="social-btn social-btn-inst icon-inst" href="#"></a>
           </div>
         </div>
       </div>
