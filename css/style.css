@@ -52,10 +52,12 @@ h2 {
 
 .icon-bookmarks::before {
   content: "\1f516";
+  padding: 20px;
 }
 
 .icon-basket::before {
   content: "\62";
+  padding: 20px;
 }
 
 .icon-basket::before,
@@ -118,6 +120,7 @@ h2 {
   color: #c1c6ce;
   font-size: 13px;
   line-height: 20px;
+  padding: 0;
 }
 
 .icon-breadcrumbs::after {
@@ -125,6 +128,7 @@ h2 {
   font-size: 13px;
   line-height: 20px;
   color: #c1c6ce;
+  padding: 16px;
 }
 
 .icon-prev::after {
@@ -492,6 +496,10 @@ a.login-in {
   margin-top: 15px;
 }
 
+.main-catalog-container {
+  padding-top: 20px;
+}
+
 .filter-catalog {
   float: left;
   width: 220px;
@@ -808,7 +816,7 @@ a.login-in {
 .catalog-items {
   float: right;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 
 .catalog-items .item:first-child,
@@ -824,7 +832,7 @@ a.login-in {
   height: 313px;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
-  margin-top: 17px;
+  margin-top: 21px;
   margin-left: 20px;
 }
 
@@ -943,7 +951,7 @@ a.login-in {
 
 .description-container {
   background-color: #f2f6f8;
-  min-height: 260px;
+  min-height: 265px;
   clear: both;
 }
 
@@ -956,10 +964,11 @@ a.login-in {
 .description h2 {
   font-size: 30px;
   text-transform: uppercase;
-  margin: 0 0 40px;
+  margin: 0 0 25px;
 }
 
 .description p {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
