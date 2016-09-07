@@ -145,6 +145,7 @@ h2 {
   color: #ffffff;
   position: absolute;
   top: 125px;
+  cursor: pointer;
 }
 
 .icon-ascending,
@@ -243,12 +244,11 @@ header {
 .search .search-btn {
   float: left;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   border: none;
   color: #6a7180;
   background-color: #293449;
   border: none;
-  padding: 10px;
 }
 
 .header-top .basket,
@@ -299,6 +299,7 @@ header {
 
 .header-center .header-contacts {
   padding-left: 70px;
+  float: left;
 }
 
 .header-center .description,
@@ -328,10 +329,6 @@ header {
   line-height: 24px;
   padding-left: 9px;
   padding-right: 9px;
-}
-
-.header-center .header-contacts {
-  float: left;
 }
 
 .header-center .login-in-container {
@@ -1187,12 +1184,14 @@ a.login-in {
 .services-group {
   float: left;
   width: 260px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .services-group ul {
   float: left;
   width: 230px;
-  padding-top: 66px;
+  padding: 46px 0 46px 0;
   margin: 0;
   padding-left: 0;
 }
@@ -1290,6 +1289,14 @@ a.login-in {
   margin: 0;
 }
 
+.shadow {
+  height: 245px;
+  width: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .small {
   width: 390px;
 }
@@ -1329,9 +1336,10 @@ a.login-in {
 }
 
 .map-popup {
-  height: 493px;
+  height: 450px;
   position: relative;
   display: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
 .map-popup .exit-btn {
@@ -1370,6 +1378,7 @@ a.login-in {
 .contacts img {
   margin-top: 33px;
   margin-bottom: 29px;
+  cursor: pointer;
 }
 
 .hidden-form {
