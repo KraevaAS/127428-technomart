@@ -2169,13 +2169,6 @@ input:focus {
   border: none;
 }
 
-.search:hover,
-.search:hover .search-btn,
-.search:hover > .search-input {
-  background-color: #212a3a;
-  color: #ffffff;
-}
-
 .icon-search:hover::before,
 .search-input:hover + .icon-search::before {
   opacity: 1;
