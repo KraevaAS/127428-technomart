@@ -1335,20 +1335,19 @@ a.login-in {
 .map-popup {
   width: 940px;
   margin: 30px auto 50px;
+  height: 450px;
 }
 
 .content-bottom {
-  height: 450px;
   padding-top: 43px;
   background-color: #ffffff;
   box-sizing: border-box;
 }
 
 .map-popup {
-  height: 450px;
   position: relative;
   display: none;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
 .map-popup .exit-btn {
