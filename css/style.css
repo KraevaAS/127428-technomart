@@ -1231,19 +1231,19 @@ a.login-in {
 
 .delivery-bottom {
   float: left;
-  background-image: url("/img/car-kamaz.png");
+  background-image: url("../img/car-kamaz.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .warranty {
-  background-image: url("/img/warranty.png");
+  background-image: url("../img/warranty.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .credit {
-  background-image: url("/img/credit.png");
+  background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
