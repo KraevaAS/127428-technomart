@@ -57,9 +57,10 @@ h2 {
 .icon-basket::before {
   content: "\62";
 }
-.icon-search::before,
+
+.icon-basket::before,
 .icon-bookmarks::before,
-.icon-basket::before {
+.icon-search::before {
   font-size: 17px;
   color: #ffffff;
   opacity: 0.3;
@@ -105,9 +106,9 @@ h2 {
   content: "\1f4f7";
 }
 
-.icon-vk::after,
 .icon-fb::after,
-.icon-inst::after {
+.icon-inst::after,
+.icon-vk::after {
   color: #ffffff;
   font-size: 18px;
 }
@@ -220,7 +221,6 @@ header {
   width: 270px;
   line-height: 18px;
   box-sizing: border-box;
-
 }
 
 .search .search-input {
@@ -234,10 +234,10 @@ header {
 
 .header-top .search,
 .search .search-input {
-    height: 100%;
-    font-family: "Cuprum", "Arial", sans-serif;
-    color: #ffffff;
-    font-size: 17px;
+  height: 100%;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 17px;
 }
 
 .search .search-btn {
@@ -251,8 +251,8 @@ header {
   padding: 10px;
 }
 
-.header-top .bookmarks,
-.header-top .basket {
+.header-top .basket,
+.header-top .bookmarks {
   float: right;
   display: inline-block;
   width: 150px;
@@ -303,7 +303,7 @@ header {
 
 .header-center .description,
 .header-center .header-contacts {
-    font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .header-center .phone {
@@ -628,7 +628,6 @@ a.login-in {
   display: inline-block;
 }
 
-
 .filter-manufacture span,
 .filter-power span,
 .filter-price span {
@@ -638,9 +637,9 @@ a.login-in {
 }
 
 .filter-manufacture span,
+.filter-name span,
 .filter-power span,
 .filter-price span,
-.filter-name span,
 .submit-btn {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -735,9 +734,9 @@ a.login-in {
 }
 
 .filter-manufacture span,
+.filter-name span,
 .filter-power span,
 .filter-price span,
-.filter-name span,
 .submit-btn {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -942,7 +941,7 @@ a.login-in {
 }
 
 .cta-btns .icon-basket::before {
-    padding-right: 30px;
+  padding-right: 30px;
 }
 
 .description-container {
@@ -1230,83 +1229,65 @@ a.login-in {
 
 .delivery-bottom {
   float: left;
-  width: 617px;
-  padding: 33px 0 0 62px;
-  height: 320px;
   background-image: url("/img/car-kamaz.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
-.delivery-bottom h2 {
-  padding: 40px 0 30px;
+.warranty {
+  background-image: url("/img/warranty.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.credit {
+  background-image: url("/img/credit.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.service-info {
+  width: 617px;
+  padding: 33px 0 0 62px;
+  float: left;
+  width: 620px;
+  height: 320px;
+  display: none;
+}
+
+.service-info h2 {
   color: #32425c;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 24px;
+  padding: 40px 0 30px;
+}
+
+.service-info p {
+  margin: 0;
 }
 
 .delivery-bottom p {
   width: 275px;
-  margin: 0;
-}
-
-.warranty {
-  float: left;
-  width: 620px;
-  padding-left: 80px;
-  height: 340px;
-  background-image: url("/img/warranty.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  display: none;
-}
-
-.warranty h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: #32425c;
 }
 
 .warranty p {
   width: 375px;
-  margin: 0;
-}
-
-.credit {
-  float: left;
-  width: 620px;
-  padding-left: 80px;
-  height: 340px;
-  background-image: url("/img/credit.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  display: none;
-}
-
-.credit h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: #32425c;
 }
 
 .credit p {
   width: 290px;
-  margin: 0;
 }
 
-.credit-btn {
+.credit .credit-btn {
   margin-top: 35px;
   width: 195px;
-  height: 40px;
-  background-color: #ee3643;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  color: #ffffff;
-  line-height: 40px;
+  height: 45px;
+  padding: 0;
+}
+
+.service-info-container .active {
+  display: block;
 }
 
 .content-bottom {
@@ -1620,10 +1601,10 @@ a.login-in {
 }
 
 .slider .slider-cta,
-.slider-page img,
 .slider .slider-page-content,
 .slider .slider-pager,
-.slider .slider-prevnext {
+.slider .slider-prevnext,
+.slider-page img {
   position: absolute;
 }
 
@@ -2205,4 +2186,8 @@ input:focus {
 
 .search-input:-ms-input-placeholder {
   color: #ffffff;
+}
+
+.open-modal {
+  display: block;
 }
