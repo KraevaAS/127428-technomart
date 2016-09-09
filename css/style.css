@@ -267,6 +267,8 @@ header {
   padding-top: 10px;
   height: 100%;
   box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .header-top .basket-catalog {
@@ -282,6 +284,8 @@ header {
   padding-top: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .header-center {
@@ -303,11 +307,15 @@ header {
   font-size: 16px;
   line-height: 23px;
   padding-top: 3px;
+  overflow: hidden;
+  max-height: 70px;
 }
 
 .header-center .header-contacts {
   padding-left: 70px;
   float: left;
+  width: 280px;
+  overflow: hidden;
 }
 
 .header-center .description,
@@ -321,6 +329,8 @@ header {
   border: 2px solid #ffffff;
   padding-top: 10px;
   margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .phone span {
@@ -337,10 +347,16 @@ header {
   line-height: 24px;
   padding-left: 9px;
   padding-right: 9px;
+  white-space: nowrap;
 }
 
 .header-center .login-in-container {
   line-height: 24px;
+}
+
+.login-in {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 a.login-in {
@@ -433,6 +449,7 @@ a.login-in {
   text-align: justify;
   height: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header-bottom ul::after {
@@ -499,7 +516,7 @@ main {
 
 .catalog-title {
   background-color: #f2f6f8;
-  min-height: 90px;
+  max-height: 90px;
 }
 
 .catalog-title h2 {
@@ -509,6 +526,8 @@ main {
   padding-left: 30px;
   padding-top: 30px;
   margin-top: 15px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .catalog-container {
@@ -616,6 +635,8 @@ main {
 .price-number {
   width: 100%;
   margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .price-number span {
@@ -768,6 +789,15 @@ main {
   color: #000000;
 }
 
+.filter-manufacture,
+.filter-name,
+.filter-power,
+.filter-price,
+.submit-btn {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .submit-btn {
   width: 140px;
   height: 40px;
@@ -786,18 +816,21 @@ main {
   padding-top: 9px;
   padding-left: 19px;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .sort span {
   width: 80px;
   text-transform: uppercase;
   font-size: 13px;
-  width: 100%;
+  width: 220px;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .sort-btns {
   display: inline-block;
-  margin-left: 139px;
+  vertical-align: top;
 }
 
 .sort-btns button {
@@ -812,19 +845,30 @@ main {
   color: #c4c1bb;
 }
 
-.sort-btns .btn-type {
-  margin-left: 60px;
+.sort-btns .sort-functional,
+.sort-btns .sort-price,
+.sort-btns .sort-type {
+  overflow: hidden;
+  display: inline-block;
 }
 
-.sort-btns .btn-functional {
-  margin-left: 55px;
+.sort-btns .sort-price {
+  width: 83px;
+}
+
+.sort-btns .sort-type {
+  width: 96px;
+}
+
+.sort-btns .sort-functional {
+  width: 150px;
 }
 
 .ascending-descending {
   float: right;
   width: 60px;
-  padding-left: 40px;
   background-color: #f7f3ec;
+  overflow: hidden;
 }
 
 .ascending-descending button {
@@ -877,7 +921,7 @@ main {
 .cta-window {
   position: fixed;
   width: 620px;
-  height: 280px;
+  min-height: 280px;
   top: 100px;
   left: 240px;
   display: none;
@@ -890,15 +934,16 @@ main {
 .cta-window-top {
   background-color: #ffffff;
   width: auto;
-  height: 165px;
+  min-height: 165px;
 }
 
 .cta-window-top span {
   font-size: 30px;
   font-family: "Cuprum", "Arial", sans-serif;
-  margin-left: 180px;
+  margin: 71px 104px 76px 144px;
   vertical-align: middle;
-  line-height: 165px;
+  line-height: 13px;
+  display: inline-block;
 }
 
 .cta-window-bottom {
@@ -922,6 +967,8 @@ main {
   font-family: "Cuprum", "Arial", sans-serif;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .exit-btn {
@@ -949,6 +996,8 @@ main {
   font-family: "Cuprum", "Arial", sans-serif;
   cursor: pointer;
   padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cta-btns .favorites-btn {
@@ -972,9 +1021,10 @@ main {
 
 .description-container {
   background-color: #f2f6f8;
-  min-height: 265px;
+  min-height: 205px;
   clear: both;
   width: auto;
+  padding-bottom: 70px;
 }
 
 .description-container .description {
@@ -987,6 +1037,8 @@ main {
   font-size: 30px;
   text-transform: uppercase;
   margin: 0 0 25px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .description p {
@@ -1015,6 +1067,8 @@ main {
   height: 120px;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .main-content .option:first-child {
@@ -1040,6 +1094,7 @@ main {
   margin-top: 15px;
   margin-left: 25px;
   margin-right: 25px;
+  overflow: hidden;
 }
 
 .option span {
@@ -1078,36 +1133,36 @@ main {
 }
 
 .materials img {
-  width: 44px;
-  height: 65px;
+  max-width: 44px;
+  max-height: 65px;
   margin-right: 40px;
   margin-top: 30px;
 }
 
 .tool img {
-  width: 75px;
-  height: 61px;
+  max-width: 75px;
+  max-height: 61px;
   margin-right: 25px;
   margin-top: 30px;
 }
 
 .technique img {
-  width: 78px;
-  height: 62px;
+  max-width: 78px;
+  max-height: 62px;
   margin-right: 30px;
   margin-top: 30px;
 }
 
 .sales img {
-  width: 59px;
-  height: 72px;
+  max-width: 59px;
+  max-height: 72px;
   margin-right: 40px;
   margin-top: 25px;
 }
 
 .delivery img {
-  width: 78px;
-  height: 63px;
+  max-width: 78px;
+  max-height: 63px;
   margin-right: 30px;
   margin-top: 30px;
 }
@@ -1116,7 +1171,7 @@ main {
 .items-title {
   background-color: #f7f3ec;
   width: 100%;
-  min-height: 80px;
+  max-height: 95px;
 }
 
 .items-title {
@@ -1129,19 +1184,21 @@ main {
 }
 
 .items-title h2 {
-  float: left;
-  text-transform: uppercase;
-  color: #32425c;
-  width: 275px;
   margin: 30px;
 }
 
 .brands-title h2 {
+  margin: 32px 10px 32px 25px;
+}
+
+.brands-title h2,
+.items-title h2 {
+  width: 580px;
   float: left;
   text-transform: uppercase;
   color: #32425c;
-  width: 375px;
-  margin: 32px 10px 32px 25px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .brands-title .all-btns,
@@ -1182,6 +1239,8 @@ main {
 
 .brand img {
   vertical-align: middle;
+  max-width: 216px;
+  max-height: 139px;
 }
 
 .list-of-brands {
@@ -1192,33 +1251,40 @@ main {
 
 .content {
   background-color: #f2f6f8;
-  height: 525px;
+  min-height: 525px;
   width: auto;
   margin: 0 auto;
 }
 
-.services {
+.services,
+.services-title {
   width: 940px;
   margin: 0 auto;
-  padding-left: 20px;
 }
 
-.services h2 {
+.services-title {
+  min-height: 170px;
+}
+
+.services-title h2 {
   text-transform: uppercase;
   margin: 0;
   padding-top: 63px;
   padding-bottom: 26px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.services p {
+.services-title p {
   width: 400px;
   margin: 0;
 }
 
 .services-group-container {
   width: 940px;
-  padding: 0 10px;
+  padding: 0;
   margin: 0 auto;
+  min-height: 355px;
 }
 
 .services-group {
@@ -1250,6 +1316,8 @@ main {
   line-height: 30px;
   padding-top: 16px;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .services-group img {
@@ -1263,39 +1331,37 @@ main {
 }
 
 .delivery-bottom {
-  float: left;
   background-image: url("../img/car-kamaz.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .warranty {
   background-image: url("../img/warranty.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .credit {
   background-image: url("../img/credit.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .service-info {
   width: 617px;
-  padding: 33px 0 0 62px;
+  padding: 35px 0 0 58px;
   float: left;
   width: 586px;
-  height: 320px;
+  min-height: 320px;
   display: none;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .service-info h2 {
   color: #32425c;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
-  line-height: 24px;
-  padding: 40px 0 30px;
+  line-height: 34px;
+  padding: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .service-info p {
@@ -1366,15 +1432,17 @@ main {
 .content-bottom,
 .map-popup {
   width: 940px;
-  margin: 30px auto 50px;
+  margin: 73px auto 67px;
+}
+
+.map-popup {
   height: 450px;
 }
 
 .content-bottom {
-  padding-top: 43px;
   background-color: #ffffff;
   box-sizing: border-box;
-  padding: 0 10px;
+  min-height: 450px;
 }
 
 .map-popup {
@@ -1394,6 +1462,11 @@ main {
   width: 540px;
 }
 
+.about-company h2 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .about-company p {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1411,6 +1484,11 @@ main {
   width: 300px;
 }
 
+.contacts h2 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .contacts p {
   width: 180px;
   margin: 23px 0 0;
@@ -1420,6 +1498,8 @@ main {
   margin-top: 33px;
   margin-bottom: 29px;
   cursor: pointer;
+  max-width: 300px;
+  max-height: 158px;
 }
 
 .hidden-form {
@@ -1542,6 +1622,8 @@ footer {
   font-size: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
   padding: 25px 0 0 3px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .footer-navigation {
@@ -1551,7 +1633,7 @@ footer {
 
 .navigation-top ul {
   width: 550px;
-  padding: 34px 8px 0 22px;
+  padding: 34px 10px 0 22px;
 }
 
 .navigation-bottom ul {
@@ -1570,6 +1652,7 @@ footer {
 .footer-top ul {
   text-align: justify;
   margin: 0;
+  overflow: hidden;
 }
 
 .footer-top ul::after {
@@ -1583,6 +1666,7 @@ footer {
 .footer-top li {
   list-style-type: none;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .footer-top a {
@@ -1621,6 +1705,7 @@ footer {
   border-radius: 50%;
   line-height: 40px;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .footer-company-name p {
@@ -1629,18 +1714,24 @@ footer {
   font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .footer-bottom-contacts .footer-mail {
   float: right;
   width: 140px;
   margin: 9px 48px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .footer-bottom-contacts .footer-website {
   float: right;
   width: 112px;
   padding: 9px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .footer-bottom-contacts p {
@@ -1693,6 +1784,8 @@ footer {
 .slider-page-content {
   width: 620px;
   height: 260px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .slider-page-content h2 {
@@ -1714,6 +1807,16 @@ footer {
 .slider-pager img {
   top: 0;
   left: 0;
+}
+
+.slider-pager img:first-child {
+  max-width: 620px;
+  max-height: 266px;
+}
+
+.slider-pager img:last-child {
+  max-width: 620px;
+  max-height: 105px;
 }
 
 .slider .slider-cta {
@@ -1783,6 +1886,8 @@ footer {
   background-color: #ee3643;
   height: 30px;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .checkout-btn,
@@ -1832,15 +1937,20 @@ footer {
   width: 218px;
   line-height: 175px;
   text-align: center;
+  overflow: hidden;
 }
 
 .item-top img {
   vertical-align: middle;
+  max-height: 177px;
+  max-width: 216px;
 }
 
 .item-name {
   width: 218px;
   text-align: center;
+  overflow: hidden;
+  max-height: 40px;
 }
 
 .item-name span {
@@ -1859,12 +1969,14 @@ footer {
   width: 218px;
   height: 57px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .item-bottom .price {
   background-color: #ee3643;
   text-align: center;
-  min-width: 70px;
+  width: 70px;
   height: 29px;
   border-radius: 2px;
   padding: 11px 15px 0 35px;
@@ -1929,6 +2041,8 @@ footer {
   text-align: center;
   background-color: #ee3643;
   border-bottom: 6px solid #b52933;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .header-top .logo {
@@ -1979,22 +2093,24 @@ a.logo {
   color: #000000;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
-  width: 38px;
+  min-width: 38px;
   height: 38px;
   text-decoration: none;
   line-height: 38px;
+  overflow: hidden;
 }
 
 .pager a:last-child {
-  width: 138px;
+  min-width: 138px;
 }
 
 .pager span {
   color: #ffffff;
   background-color: #ee3643;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   line-height: 40px;
+  overflow: hidden;
 }
 
 .items-container {
