@@ -942,7 +942,7 @@ main {
   font-family: "Cuprum", "Arial", sans-serif;
   margin: 71px 104px 76px 144px;
   vertical-align: middle;
-  line-height: 13px;
+  line-height: 30px;
   display: inline-block;
 }
 
@@ -1536,7 +1536,6 @@ main {
 .form-zone label {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
-  white-space: nowrap;
 }
 
 .form-zone input {
