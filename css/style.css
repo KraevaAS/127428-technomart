@@ -986,7 +986,8 @@ main {
   display: none;
 }
 
-.cta-btns button {
+.cta-btns button,
+.cta-btns a {
   display: block;
   height: 35px;
   width: 100%;
@@ -1013,10 +1014,12 @@ main {
   border-bottom: 2px solid #367315;
   color: #ffffff;
   text-align: left;
+  padding-top: 10px;
+  box-sizing: border-box;
 }
 
 .cta-btns .icon-basket::before {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .description-container {
@@ -1312,7 +1315,6 @@ main {
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   padding-left: 22px;
-  display: inline-block;
   line-height: 30px;
   padding-top: 16px;
   cursor: pointer;
@@ -1435,10 +1437,6 @@ main {
   margin: 73px auto 67px;
 }
 
-.map-popup {
-  height: 450px;
-}
-
 .content-bottom {
   background-color: #ffffff;
   box-sizing: border-box;
@@ -1446,6 +1444,7 @@ main {
 }
 
 .map-popup {
+  height: 450px;
   position: relative;
   display: none;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
@@ -1455,6 +1454,14 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.map-popup-showed {
+    position: relative;
+    width: 940px;
+    height: 450px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    margin: 0 auto 67px;
 }
 
 .about-company {
@@ -1905,6 +1912,8 @@ footer {
 
 .feedback-btn {
   width: 300px;
+  height: 30px;
+  padding-top: 10px;
   display: inline-block;
 }
 
@@ -2381,5 +2390,14 @@ input:focus {
 }
 
 .hidden {
+  display: none;
+}
+
+
+.contacts-img:active .map-popup {
+  display: block;
+}
+
+.contacts-img:active .content-bottom {
   display: none;
 }
