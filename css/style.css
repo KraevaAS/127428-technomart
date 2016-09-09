@@ -1530,7 +1530,7 @@ main {
   width: 460px;
   min-height: 230px;
   margin: 45px auto 40px;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .form-zone label {
